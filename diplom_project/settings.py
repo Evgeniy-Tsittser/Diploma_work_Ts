@@ -143,7 +143,7 @@ CELERY_TIMEZONE = 'Europe/Moscow'
 # Настройки для отправки SMS-сообщения
 SMS_BACKEND = 'sms.backends.sms_aero.SMSAeroBackend'
 SMSAERO_EMAIL = 'evgenc1980@mail.ru'
-SMSAERO_API_KEY = 'tJuLoVucxZaSxxO8xKmAfoilFD6'
+SMSAERO_API_KEY = 'tJuLoVucxZaSxxO8xKmAfoilF**'
 SMS_FROM = 'ООО Горводоканал'
 
 # Настройка планирования задач по времени
