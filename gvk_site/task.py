@@ -5,7 +5,7 @@ from .models import Subscribers
 from smsaero import SmsAero, SmsAeroException
 
 SMSAERO_EMAIL = 'evgenc1980@mail.ru'
-SMSAERO_API_KEY = 'tJuLoVucxZaSxxO8xKmAfoilFD6'
+SMSAERO_API_KEY = 'tJuLoVucxZaSxxO8xKmAfoil***'
 
 #Функция отправки СМС-сообщения
 def send_sms(phone: int, message: str) -> dict:
