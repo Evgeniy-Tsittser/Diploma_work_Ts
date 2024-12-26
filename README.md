@@ -1,5 +1,3 @@
-## Веб-приложение "Сайт ООО "Горводоканал""
-
 ## **Описание проекта**
 
 "Сайт ООО "Горводоканал"" — это веб-приложение для предоставления пользователям информации о деятельности предприятия, а также возможностью 
@@ -16,8 +14,8 @@
 - - Возможность добавления, редактирования и удаления сотрудников администратором приложения.
 - **Авторизация** пользователей.
 - При регистрации абонента ему присваивается логин и пароль, посредством которых он может посещать личный кабинет.
-- Применен функционал автоматического отслеживания наступления определенного периода до наступления даты окончания срока поверки приборов учета
-  и направления СМС-уведомления абоненту.
+- Применен функционал автоматического отслеживания наступления определенного периода до наступления даты окончания срока поверки
+  приборов учета и направления СМС-уведомления абоненту.
 - Имеется возможность вносить абонентом текущие показание прибора учета и формировать квитанцию об оплате в PDF-формате с QR-кодом.
 - **Авторизация** ссотрудников.
 - При регистрации сотрудника ему присваивается логин и пароль, посредством которых он может посещать раздел для сотрудников.
@@ -73,36 +71,8 @@ python manage.py runserver
 Теперь проект доступен по адресу: http://127.0.0.1:8000/.
 
 ## Структура проекта
-├───venv
-├───diplom_project
-│   └───__init__.py
-│   └───asgi.py
-│   └───celery_app.py
-│   └───settings.py
-│   └───urls.py
-│   └───wsgi.py
-├───fonts
-│   FreeSans.ttf
-├───gvk_site
-│   ├───migrations
-│   │   └───__pycache__
-│   ├───tests
-│   │   ├───gvk_site_tests
-│   │   │   └───tests.py
-│   │   └───rembaza_tests
-│   │       └───test.py
-│   └───__init__.py
-│   └───admin.py
-│   └───apps.py
-│   └───forms.py
-│   └───models.py
-│   └───signals.py
-│   └───task.py
-│   └───urls.py
-│   └───views.py
-├───static
-└───templates
-    └───gvk_site
+![Структура](https://github.com/user-attachments/assets/cec45c4e-5b28-425e-9ac1-6c132b3fbc46)
+
 ## Использование
 1. Если вы администратор, то для добавления данных в базы данных перейдите по ссылке http://127.0.0.1:8000/admin.
 2. Выберите необходимую базу и внесите данные.
@@ -114,53 +84,55 @@ python manage.py runserver
 
 ## Демонстрация работы приложения представлена изображениями:
     - Главная страница:
-    ![Главная](https://github.com/user-attachments/assets/dc47e44a-e625-47c6-bdf4-44af2c320572) 
-
+  ![Главная](https://github.com/user-attachments/assets/77e0e8c2-bb47-4260-997c-82a687af01bb)
+ 
     - Страница "О предприятии"
-    ![О предприятии](https://github.com/user-attachments/assets/f9e5c9c8-48e7-4f2f-97d1-b16095bd631f) 
+  ![О предприятии](https://github.com/user-attachments/assets/28aa91b2-2872-4167-9dc2-c2b60e4afac2)
 
     - Страница "Тарифы"
-    ![Тарифы](https://github.com/user-attachments/assets/7ce344da-cb03-4270-bde2-89338846c8c3) 
+  ![Тарифы](https://github.com/user-attachments/assets/cc8a9ff4-2d85-4dfa-97da-587e38925e9b)
 
     - Страница "Контакты"
-    ![Контакты](https://github.com/user-attachments/assets/1076b442-3997-4091-a4cf-e62accbb5333) 
+  ![Контакты](https://github.com/user-attachments/assets/344a9dee-cb11-4a28-b03b-4b22ac9d9047)
 
     - Страница "Качество воды"
-    ![Качество](https://github.com/user-attachments/assets/e847b0d7-79d1-475e-9288-2837feeb63bc) 
+  ![Качество](https://github.com/user-attachments/assets/92238b40-761c-4eec-91e7-b4711facf2e8)
 
     - Страница авторизации абонента
-    ![Авторизация абонента](https://github.com/user-attachments/assets/669b920b-1999-4504-860b-0897f02f24ca)
+  ![Авторизация абонента](https://github.com/user-attachments/assets/309d7b5c-0475-439b-b5f7-35bb136676f7)
 
     - Страница личного кабинета абонента
-    ![Личный кабинет](https://github.com/user-attachments/assets/b7d5127e-d234-4691-9594-cbc6300d93f6)
+  ![Личный кабинет](https://github.com/user-attachments/assets/26a22572-2036-4303-b687-4b4ce896ed6a)
 
     - Страница авторизации сотрудника
-    ![Авторизация сотрудника](https://github.com/user-attachments/assets/bfbc16b7-ff76-4047-bb54-2dfcb461fac8)
+  ![Авторизация сотрудника](https://github.com/user-attachments/assets/7948c518-c5ad-4c0a-b12e-d5b3e726348b)
 
     - Страница выбора года ремонтных работ
-    ![ВЫбор года](https://github.com/user-attachments/assets/09b15a4b-ed44-44a6-9bfe-ebe553604f2e)
+  ![ВЫбор года](https://github.com/user-attachments/assets/aa1cbd5f-e7e3-4c1a-b791-e54aaf265e5e)
 
     - Страница выбора таблиц ремонтных работ
-    ![Выбор таблиц](https://github.com/user-attachments/assets/e42a025c-f2f2-46b1-b56d-d31f2c2905bc)
+  ![Выбор таблиц](https://github.com/user-attachments/assets/6c26eb28-9d9a-4a9a-ae98-74c75ba19d0e)
 
     - Страница работ за выбранный месяц
-    ![Меячные работы](https://github.com/user-attachments/assets/dc62d8c5-ea0f-44d8-88b4-87674da92779)
+  ![Меячные работы](https://github.com/user-attachments/assets/618dc049-8092-44a6-9ea1-0a64912d6053)
 
     - Страница годовых работ по водоснабжению
-    ![Годовая водоснабжение](https://github.com/user-attachments/assets/86debcd4-f015-4562-8f0c-15cca6f09580)
+  ![Годовая водоснабжение](https://github.com/user-attachments/assets/cf05725c-f4eb-40dd-bc84-e44bc9a12168)
 
     - Страница годовых работ по водоотведению
-    ![Годовая водоотведение](https://github.com/user-attachments/assets/d8e07454-c947-4083-86e8-5028dd71458c)
+  ![Годовая водоотведение](https://github.com/user-attachments/assets/601a93af-8056-4b45-8018-9c6711b4b295)
 
     - Админ-панель
-    ![Админка](https://github.com/user-attachments/assets/adf5f164-58b2-475d-b891-556a6aeadbc9)
+  ![Админка](https://github.com/user-attachments/assets/68f99092-4a31-4608-970b-513e4f9207a3)
     
 ## Тестирование и Логирование
 ```bash
 1. Для тестирования функций представления приложения откройте терминал.
 2. Перейдите в директорию проекта cd diplom_project.
-3. Для тестирования представлении общедоступной части приложения, авторизацию и личный кабинет, то необходимо набрать в командной строке python manage.py test gvk_site.tests.gvk_site_tests.tests.
-4. Для тестирования представлении части приложения с таблицами ремонтных работ, то необходимо набрать в командной строке python manage.py test gvk_site.tests.rembaza_tests.test. 
+3. Для тестирования представлений общедоступной части приложения, авторизацию и личный кабинет, то необходимо набрать
+в командной строке python manage.py test gvk_site.tests.gvk_site_tests.tests.
+4. Для тестирования представлений части приложения с таблицами ремонтных работ, то необходимо набрать в командной
+строке python manage.py test gvk_site.tests.rembaza_tests.test. 
 ```
 4. Логирование осуществляется через стандартные механизмы Django. Все ошибки записываются в файл django.log
 
